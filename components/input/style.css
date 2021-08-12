@@ -1,0 +1,21 @@
+.messaging-1 {
+    display: grid;
+    grid-template-columns: 82fr 6fr 6fr 6fr;
+    border: solid 1px;
+
+}
+.messaging-1 label{
+	display: none;
+}
+
+.messaging-1 button {
+    max-width: 6vw;
+    padding: 0;
+    overflow:  hidden;
+    font-size: 10px;
+}
+
+.messaging-1 textarea {
+    resize: none;
+    min-width: 30%;
+}

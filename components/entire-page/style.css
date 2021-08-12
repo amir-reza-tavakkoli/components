@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+article {
+    border: solid 4px;
+}
+
+.entire-page-1 {
+    width: calc(100vw- 1px);
+    height: calc(100vh - 1px);
+    display: grid;
+    grid-template-rows: 10fr 84fr 6fr;
+}
