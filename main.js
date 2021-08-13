@@ -1,4 +1,4 @@
-import { createApp,defineComponent  } from '../vue.js'
+import { createApp,defineComponent  } from './vue.js'
 
 
 let Header = defineComponent({
