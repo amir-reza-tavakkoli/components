@@ -27,7 +27,7 @@ let Header = defineComponent({
                 </a>
             </address>
             <button type="button" aria-label="Other options">
-                <svg x="0px" y="0px" role="presentation"
+                <svg x="0px" y="0px" role="presentation" id="l"
                 style="enable-background:new 0 0 32.055 32.055;" >
                     <g>
 	                    <path d="M3.968,12.061C1.775,12.061,0,13.835,0,16.027c0,2.192,1.773,3.967,3.968,3.967c2.189,0,3.966-1.772,3.966-3.967
