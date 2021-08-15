@@ -62,14 +62,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .username-info a>img {
+        height: 40px;
+        width: 40px;
+    }
     .username-info a {
         display: flex;
         align-items: center;
     }
-    .username-info a>img {
-        margin-top: 16px;
-        height: 40px;
-        width: 40px;
+    .username-info p{
+        margin: 0px;
     }
     #k {
         /* margin-top: 6px; */
@@ -85,7 +88,7 @@
     background-color: inherit;
 }
 
-.username-info h1 {
+.username-info p {
     padding: 0px;
     font-size: 16px;
     margin-right: auto;
@@ -93,7 +96,7 @@
 }
 
 button svg {
-    width: 50px;
+    width: 40px;
     height: 50px;
     fill: aliceblue;
 }
@@ -129,6 +132,8 @@ button svg {
     }
     button svg {
         width: 20px;
+        height: 20px;
+        margin-right: 10px;
     }
 }
 
