@@ -99,8 +99,9 @@
     border-left: #1a2120 solid;
 }
 
-button img {
+button svg {
     width: 50px;
+    height: 50px;
 }
 
 .messaging-1 {
@@ -118,7 +119,7 @@ button img {
     .messaging-1 button {
         font-size: 6px;
     }
-    button img {
+    button svg {
         width: 20px;
     }
 }
