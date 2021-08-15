@@ -1,14 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    color: ivory;
+    color: #0D0D0D;
+    font-weight: 500;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-    background-color: #151d27;
+    background-color: #1F303D;
 }
 
 .entire-page-1 {
-    background-color: #151d27;
+    background-color: #1F303D;
 }
 
 .username-info {
@@ -143,7 +144,7 @@ button svg {
     overflow: hidden;
     margin-bottom: 30px;
     margin-left: 10px;
-    background-color: #1d2633;
+    background-color: #9196A1;
 }
 
 .messaging-body-1 img {
@@ -161,7 +162,7 @@ button svg {
         height: 24px;
     }
     .messaging-body-1 p {
-        font-size: 10px;
+        font-size: 14px;
     }
     .messaging-body-1 {
         width: 65%;
@@ -230,7 +231,7 @@ button svg {
         height: 24px;
     }
     .messaging-body-2 p {
-        font-size: 10px;
+        font-size: 14px;
     }
     .messaging-body-2 {
         width: 65%;
