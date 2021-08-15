@@ -115,7 +115,7 @@ let EntirePage = defineComponent({
 })
 
 let app = createApp({
-	components: { Header, EntirePage, Input, Message, MessageRight, MidSection },
+	components: { EntirePage },
  	template: `
         	<EntirePage></EntirePage>
 	`,
