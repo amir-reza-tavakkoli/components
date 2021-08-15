@@ -1,6 +1,6 @@
 import { createApp, defineComponent } from './vue.js'
 
-let Header = defineComponent( {
+let Header = defineComponent({
     template: `
         <div id="i"></div>
         <header class="username-info" aria-label="Chat info">
@@ -38,7 +38,7 @@ let Header = defineComponent( {
                 </svg>
             </button>
         </header>`,
-  })
+})
 
 let Input = defineComponent({
     template: `
@@ -52,12 +52,12 @@ let Input = defineComponent({
             <button class="btn" type="button" id="attach" aria-label="Attach a file">Attach</button>
             <button class="btn" type="button" id="record" aria-label="Record your voice">Record</button>
         </article>`,
-  })
+})
 
 let MidSection = defineComponent({
     template: `
         <article class="middle-part" aria-live="polite"></article>`,
-  })
+})
 
 let Message = defineComponent({
     template: `
@@ -73,7 +73,7 @@ let Message = defineComponent({
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
         </article>`,
-  })
+})
 
 let MessageRight = defineComponent({
     template: `
@@ -89,7 +89,7 @@ let MessageRight = defineComponent({
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
         </article>`,
-  })
+})
 
 let EntirePage = defineComponent({
     components: { Header, Input, Message, MessageRight, MidSection },
@@ -106,7 +106,7 @@ let EntirePage = defineComponent({
             </Midsection>
             <Input></Input>
         </article>`,
-  })
+})
 
 let app = createApp({
 	components: { Header, EntirePage, Input, Message, MessageRight, MidSection },
