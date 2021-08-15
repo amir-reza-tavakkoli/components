@@ -8,6 +8,18 @@
     background-color: #1F303D;
 }
 
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+
 .entire-page-1 {
     background-color: #1F303D;
 }
@@ -24,6 +36,7 @@
     height: 64px;
     background-color: inherit;
     border-bottom: solid #141b27;
+    color: aliceblue;
 }
 
 .username-info a {
@@ -35,6 +48,7 @@
     text-decoration: none;
     font-style: normal;
     background-color: inherit;
+
 }
 
 .username-info img {
@@ -62,6 +76,7 @@
         /* margin-top: 6px; */
         font-size: 11px;
         /* margin-bottom:5 px; */
+        color: aliceblue;
     }
 }
 
@@ -76,18 +91,9 @@
     font-size: 16px;
     margin-right: auto;
     margin-top: 20px;
+
 }
 
-.visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    border: 0 !important;
-    padding: 0 !important;
-    clip-path: inset(50%) !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-}
 
 .messaging-1 button {
     max-width: 6vw;
@@ -103,6 +109,7 @@
 button svg {
     width: 50px;
     height: 50px;
+    fill: aliceblue;
 }
 
 .messaging-1 {
@@ -114,6 +121,7 @@ button svg {
     display: grid;
     grid-template-columns: 82fr 6fr 6fr 6fr;
     min-height: 32px;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,7 +138,10 @@ button svg {
     min-width: 30%;
     background-color: #1d2633;
     border: none;
+    color: aliceblue;
 }
+
+.messaging-1 button{   color: aliceblue;}
 
 .messaging-body-1 {
     min-width: 30%;
@@ -145,6 +156,7 @@ button svg {
     margin-bottom: 30px;
     margin-left: 10px;
     background-color: #9196A1;
+
 }
 
 .messaging-body-1 img {
@@ -212,7 +224,7 @@ button svg {
     overflow: hidden;
     margin-right: 10px;
     margin-bottom: 30px;
-    background-color: #456a94;
+    background-color: #4E77A6;
 }
 
 @media only screen and (max-width: 600px) {}
