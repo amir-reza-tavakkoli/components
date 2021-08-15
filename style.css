@@ -19,10 +19,11 @@
     white-space: nowrap !important;
 }
 
-
 .entire-page-1 {
     background-color: #1F303D;
 }
+
+/* Header---------------------------------- */
 
 .username-info {
     background-color: #222e3c;
@@ -48,7 +49,6 @@
     text-decoration: none;
     font-style: normal;
     background-color: inherit;
-
 }
 
 .username-info img {
@@ -62,17 +62,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .username-info a{display: flex;
-    align-items: center;}
-
-    .username-info a >img {
+    .username-info a {
+        display: flex;
+        align-items: center;
+    }
+    .username-info a>img {
         margin-top: 16px;
         height: 40px;
         width: 40px;
-
-
     }
-    #k{
+    #k {
         /* margin-top: 6px; */
         font-size: 11px;
         /* margin-bottom:5 px; */
@@ -91,19 +90,6 @@
     font-size: 16px;
     margin-right: auto;
     margin-top: 20px;
-
-}
-
-
-.messaging-1 button {
-    max-width: 6vw;
-    padding: 0;
-    overflow: hidden;
-    font-size: 10px;
-    background-color: #1d2633;
-    margin: 0px;
-    border: none;
-    border-left: #1a2120 solid;
 }
 
 button svg {
@@ -111,6 +97,8 @@ button svg {
     height: 50px;
     fill: aliceblue;
 }
+
+/* Input---------------------------------- */
 
 .messaging-1 {
     margin-top: 32px;
@@ -121,7 +109,18 @@ button svg {
     display: grid;
     grid-template-columns: 82fr 6fr 6fr 6fr;
     min-height: 32px;
+}
 
+.messaging-1 button {
+    max-width: 6vw;
+    padding: 0;
+    overflow: hidden;
+    font-size: 10px;
+    background-color: #1d2633;
+    margin: 0px;
+    border: none;
+    border-left: #1a2120 solid;
+    color: aliceblue;
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,7 +140,7 @@ button svg {
     color: aliceblue;
 }
 
-.messaging-1 button{   color: aliceblue;}
+/* Message------------------------------ */
 
 .messaging-body-1 {
     min-width: 30%;
@@ -156,7 +155,6 @@ button svg {
     margin-bottom: 30px;
     margin-left: 10px;
     background-color: #9196A1;
-
 }
 
 .messaging-body-1 img {
@@ -202,13 +200,11 @@ button svg {
     background-color: inherit;
 }
 
-.messaging-body-2 a {
+.messaging-body-1 a, .messaging-body-2 a {
     background-color: inherit;
 }
 
-.messaging-body-1 a {
-    background-color: inherit;
-}
+/* Right Messgae--------------------- */
 
 .messaging-body-2 {
     min-width: 30%;
@@ -271,9 +267,7 @@ button svg {
     background-color: inherit;
 }
 
-.middle-part {
-    border: solid blue;
-}
+/* General---------------------------------- */
 
 #i {
     padding: 40px;
