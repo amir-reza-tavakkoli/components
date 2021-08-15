@@ -37,7 +37,8 @@ let Header = defineComponent({
                     </g>
                 </svg>
             </button>
-        </header>`,
+        </header>
+    `,
 })
 
 let Input = defineComponent({
@@ -51,12 +52,14 @@ let Input = defineComponent({
             <button class="btn" type="submit" id="submit" aria-label="Send message">Send</button>
             <button class="btn" type="button" id="attach" aria-label="Attach a file">Attach</button>
             <button class="btn" type="button" id="record" aria-label="Record your voice">Record</button>
-        </article>`,
+        </article>
+    `,
 })
 
 let MidSection = defineComponent({
     template: `
-        <article class="middle-part" aria-live="polite"></article>`,
+        <article class="middle-part" aria-live="polite"></article>
+    `,
 })
 
 let Message = defineComponent({
@@ -72,7 +75,8 @@ let Message = defineComponent({
             </address>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
-        </article>`,
+        </article>
+    `,
 })
 
 let MessageRight = defineComponent({
@@ -88,7 +92,8 @@ let MessageRight = defineComponent({
             </address>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
-        </article>`,
+        </article>
+    `,
 })
 
 let EntirePage = defineComponent({
@@ -105,13 +110,15 @@ let EntirePage = defineComponent({
                 <Message></message>
             </Midsection>
             <Input></Input>
-        </article>`,
+        </article>
+    `,
 })
 
 let app = createApp({
 	components: { Header, EntirePage, Input, Message, MessageRight, MidSection },
  	template: `
-        	<EntirePage></EntirePage>`
+        	<EntirePage></EntirePage>
+	`,
 })
 
 app.mount('#app')
