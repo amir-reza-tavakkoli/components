@@ -1,6 +1,6 @@
 import { createApp, defineComponent } from './vue.js'
 
-let Header = defineComponent( {
+let Header = defineComponent({
     template: `
         <nav ><a class="novisuals" style="font-size:100px;" href="index.html#textarea">skip and send message</a></nav>
         <div id="i"></div>
@@ -17,7 +17,6 @@ let Header = defineComponent( {
                         c2.929-2.929,2.929-7.679,0-10.607c-1.465-1.464-3.384-2.197-5.304-2.197c-1.919,0-3.838,0.733-5.303,2.196l-41.629,41.628
                         c-1.407,1.406-2.197,3.313-2.197,5.303c0.001,1.99,0.791,3.896,2.198,5.305L94.861,156.507z"/>
                     </g>
-
                 </svg>
             </button>
             <address>
@@ -31,15 +30,16 @@ let Header = defineComponent( {
                 <svg x="0px" y="0px" role="presentation" id="l"
                 style="enable-background:new 0 0 32.055 32.055;" >
                     <g>
-	            	<path d="M3.968,12.061C1.775,12.061,0,13.835,0,16.027c0,2.192,1.773,3.967,3.968,3.967c2.189,0,3.966-1.772,3.966-3.967
+	                <path d="M3.968,12.061C1.775,12.061,0,13.835,0,16.027c0,2.192,1.773,3.967,3.968,3.967c2.189,0,3.966-1.772,3.966-3.967
 		        C7.934,13.835,6.157,12.061,3.968,12.061z M16.233,12.061c-2.188,0-3.968,1.773-3.968,3.965c0,2.192,1.778,3.967,3.968,3.967
 		        s3.97-1.772,3.97-3.967C20.201,13.835,18.423,12.061,16.233,12.061z M28.09,12.061c-2.192,0-3.969,1.774-3.969,3.967
 		        c0,2.19,1.774,3.965,3.969,3.965c2.188,0,3.965-1.772,3.965-3.965S30.278,12.061,28.09,12.061z"/>
                     </g>
                 </svg>
             </button>
-        </header>`,
-  })
+        </header>
+    `,
+})
 
 let Input = defineComponent({
     template: `
@@ -52,13 +52,15 @@ let Input = defineComponent({
             <button class="btn" type="submit" id="submit" aria-label="Send message">Send</button>
             <button class="btn" type="button" id="attach" aria-label="Attach a file">Attach</button>
             <button class="btn" type="button" id="record" aria-label="Record your voice">Record</button>
-        </article>`,
-  })
+        </article>
+    `,
+})
 
 let MidSection = defineComponent({
     template: `
-        <article class="middle-part" aria-live="polite"></article>`,
-  })
+        <article class="middle-part" aria-live="polite"></article>
+    `,
+})
 
 let Message = defineComponent({
     template: `
@@ -71,8 +73,9 @@ let Message = defineComponent({
             </address>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
-        </article>`,
-  })
+        </article>
+    `,
+})
 
 let MessageRight = defineComponent({
     template: `
@@ -85,8 +88,9 @@ let MessageRight = defineComponent({
             </address>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste culpa, in itaque blanditiis ex totamasperiores aliquid!</p>
             <time pubdate >12:30</time>
-        </article>`,
-  })
+        </article>
+    `,
+})
 
 let EntirePage = defineComponent({
     components: { Header, Input, Message, MessageRight, MidSection },
@@ -102,19 +106,15 @@ let EntirePage = defineComponent({
                 <Message></message>
             </Midsection>
             <Input></Input>
-        </article>`,
-  })
+        </article>
+    `,
+})
 
 let app = createApp({
-<<<<<<< HEAD
-    components: { EntirePage,},
-   template: `
-        <EntirePage></EntirePage>`
-=======
-	components: { Header, EntirePage, Input, Message, MessageRight, MidSection },
- 	template: `
-        	<EntirePage></EntirePage>`
->>>>>>> 3b917f3e17972a3e7fc1296a965491494ca35e43
+    components: { EntirePage },
+    template: `
+        <EntirePage></EntirePage>
+	`,
 })
 
 app.mount('#app')
