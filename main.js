@@ -2,6 +2,7 @@ import { createApp, defineComponent} from './vue.js'
 
 let Header = defineComponent({
     template: `
+        <nav ><a class="novisuals" style="font-size:100px;" href="index.html#textarea">skip and send message</a></nav>
         <div id="i"></div>
         <header class="username-info" aria-label="Chat info">
             <button type="button" aria-label="Back to all chats">
@@ -20,7 +21,7 @@ let Header = defineComponent({
                 </svg>
             </button>
             <address>
-                <h1 class="visually-hidden">Chat with username 1</h1>
+                <h1 class="novisuals">Chat with username 1</h1>
                 <a href="users/username-1/username-1.html" aria-label="Go to username1 profile">
                     <img src="users/username-1/username-1.png" alt="username1 avatar" aria-label="Go to username1 avatar">
                     <p><span id="k">Username 1<span></p>
@@ -44,8 +45,8 @@ let Input = defineComponent({
     template: `
         <div id="j" role="presentation"></div>
         <article class="messaging-1" aria-label="Enter and send your message">
-            <h2 class="visually-hidden">Enter your message to send</h2>
-            <label for="textarea" class="visually-hidden">Enter your message to send</label>
+            <h2 class="novisuals">Enter your message to send</h2>
+            <label for="textarea" class="novisuals">Enter your message to send</label>
             <textarea name="textarea" id="textarea" placeholder="Enter message">
             </textarea>
             <button class="btn" type="submit" id="submit" aria-label="Send message">Send</button>
@@ -62,8 +63,6 @@ let MidSection = defineComponent({
 let Message = defineComponent({
     template: `
         <article id="#1" class="messaging-body-1" aria-label="Message from username1 at 12:30 on @date">
-            <h2 class="visually-hidden">Message form username1
-            </h2>
             <address aria-label="username 1 profile">
                 <a href="users/username-1/username-1.html">
                     <img src="users/username-1/username-1.png" alt="Username 1 avatar">
@@ -78,8 +77,6 @@ let Message = defineComponent({
 let MessageRight = defineComponent({
     template: `
         <article id="#1" class="messaging-body-2" aria-label="Already sent message from you at 12:30 on @date">
-            <h2 class="visually-hidden">Message sent from you
-            </h2>
             <address aria-label="your profile">
                 <a href="users/username-2/username-2.html">
                     <img src="users/username-2/username-2.png" alt="Your avatar">
@@ -109,7 +106,7 @@ let EntirePage = defineComponent({
   })
 
 let app = createApp({
-    components: {Header, EntirePage, Input, Message, MessageRight, MidSection},
+    components: { EntirePage,},
    template: `
         <EntirePage></EntirePage>`
 })
