@@ -8,7 +8,7 @@
     background-color: #1F303D;
 }
 
-.novisuals{
+.novisuals {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -63,11 +63,21 @@
     border-radius: 100%;
 }
 
+header {
+    width: 100% !important;
+}
+
 #k {
     /* margin-top: 6px; */
     font-size: 11px;
     color: aliceblue;
     /* margin-bottom:5 px; */
+}
+
+#l {
+    width: 34px;
+    height: 24px;
+    margin-right: 2px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -89,7 +99,7 @@
         margin-top: 5px;
     }
     #l {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-right: 4px;
     }
     /* .username-info{
@@ -117,6 +127,10 @@ button svg {
     margin-right: 10px;
     margin-top: 7px;
     fill: aliceblue;
+}
+
+header svg {
+    margin-left: 10px;
 }
 
 /* button svg:nth-of-type(2){visibility: hidden !important;} */
@@ -315,6 +329,7 @@ margin-right: 100px;}
 
 @media only screen and (min-width: 601px) {
     #j {
+        height: 15px;
         padding: 10px;
     }
 }
