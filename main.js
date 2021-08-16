@@ -114,7 +114,7 @@ let app = createApp({
     components: { EntirePage },
     template: `
         <EntirePage></EntirePage>
-	`,
+    `,
 })
 
 app.mount('#app')
