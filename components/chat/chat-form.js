@@ -2,10 +2,10 @@ import { defineComponent } from '../../packages/vue.js'
 
 export let ChatForm = defineComponent({
     template: `
-        <div id="j" role="presentation"></div>
-        s<article class="messaging-1">
-            <h2 class="novisuals">Enter your message to send</h2>
-            <label for="textarea" class="novisuals"> Hit the send button when you finished</label>
+        <div class="top-x" role="presentation"></div>
+        s<article class="chat-form">
+            <h2 class="novisual">Enter your message to send</h2>
+            <label for="textarea" class="novisual"> Hit the send button when you finished</label>
             <textarea name="textarea" id="textarea" placeholder="Enter message">
             </textarea>
             <button class="btn" type="submit" id="submit" aria-label="Send message">Send</button>

@@ -3,10 +3,10 @@ import { defineComponent } from '../../packages/vue.js'
 export let ChatHeader = defineComponent({
     template: `
         <nav>
-            <a class="novisuals" style="font-size:100px;" href="index.html#textarea" tabindex="1">skip and send message to username1</a>
+            <a class="novisual" style="font-size:100px;" href="index.html#textarea" tabindex="1">skip and send message to username1</a>
             </nav>
-        <div id="i"></div>
-        <header class="username-info" aria-label="Chat info">
+        <div class="bottom-x"></div>
+        <header class="chat-header" aria-label="Chat info">
             <button type="button" aria-label="Back to all chats">
                 <svg role="presentation" x="0px" y="0px"
                 viewBox="0 0 219.151 219.151" style="enable-background:new 0 0 219.151 219.151;" >
@@ -22,14 +22,14 @@ export let ChatHeader = defineComponent({
                 </svg>
             </button>
             <address>
-                <h1 class="novisuals">Chat with username 1</h1>
+                <h1 class="novisual">Chat with username 1</h1>
                 <a href="users/username-1/username-1.html" aria-label="Go to username1 profile">
                     <img src="users/username-1/username-1.png" alt="username1 avatar" aria-label="Go to username1 avatar">
-                    <p><span id="k">Username 1<span></p>
+                    <p><span class="p-in-address">Username 1</span></p>
                 </a>
             </address>
             <button type="button" aria-label="Other options">
-                <svg x="0px" y="0px" role="presentation" id="l"
+                <svg x="0px" y="0px" role="presentation" class="svg-in-button"
                 style="enable-background:new 0 0 32.055 32.055;" >
                     <g>
 	                <path d="M3.968,12.061C1.775,12.061,0,13.835,0,16.027c0,2.192,1.773,3.967,3.968,3.967c2.189,0,3.966-1.772,3.966-3.967

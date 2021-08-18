@@ -8,7 +8,7 @@
     background-color: #1F303D;
 }
 
-.novisuals {
+.novisual {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -19,13 +19,13 @@
     white-space: nowrap !important;
 }
 
-.entire-page-1 {
+.chat-page {
     background-color: #1F303D;
 }
 
 /* Header---------------------------------- */
 
-.username-info {
+.chat-header {
     background-color: #222e3c;
     position: fixed;
     top: 0;
@@ -41,7 +41,7 @@
     color: aliceblue;
 }
 
-.username-info a {
+.chat-header a {
     display: grid;
     grid-template-columns: 1fr 22fr;
     padding: 0px;
@@ -54,7 +54,7 @@
     background-color: inherit;
 }
 
-.username-info img {
+.chat-header img {
     margin-left: 10px;
     margin-right: 10px;
     height: 40px;
@@ -67,29 +67,29 @@ header {
     width: 100% !important;
 }
 
-#k {
+.p-in-address {
     /* margin-top: 6px; */
     font-size: 11px;
     color: aliceblue;
     /* margin-bottom:5 px; */
 }
 
-#l {
+.svg-in-button {
     width: 34px;
     height: 24px;
     margin-right: 2px;
 }
 
 @media only screen and (min-width: 601px) {
-    .username-info a>img {
+    .chat-header a>img {
         height: 50px;
         width: 50px;
     }
-    .username-info a {
+    .chat-header a {
         display: grid;
         grid-template-columns: 6fr 86fr 8fr;
     }
-    #k {
+    .p-in-address {
         /* margin-top: 6px; */
         font-size: 14px;
         /* margin-bottom:5 px; */
@@ -98,22 +98,22 @@ header {
     button svg {
         margin-top: 5px;
     }
-    #l {
+    .svg-in-button {
         margin-top: 5px;
         margin-right: 4px;
     }
-    /* .username-info{
+    /* .chat-header{
         min-width: 100vh;
     } */
 }
 
-.username-info button {
+.chat-header button {
     background-color: #1d2633;
     border: none;
     background-color: inherit;
 }
 
-.username-info p {
+.chat-header p {
     padding: 0px;
     font-size: 16px;
     margin-right: auto;
@@ -141,14 +141,14 @@ align-self: flex-end;
 margin-right: 100px;}
  */
 
-#l {
+.svg-in-button {
     justify-self: right;
     transform: rotate(90deg);
 }
 
 /* Input---------------------------------- */
 
-.messaging-1 {
+.chat-form {
     margin-top: 32px;
     position: fixed;
     bottom: 0;
@@ -159,7 +159,7 @@ margin-right: 100px;}
     min-height: 32px;
 }
 
-.messaging-1 button {
+.chat-form button {
     max-width: 6vw;
     padding: 0;
     overflow: hidden;
@@ -172,7 +172,7 @@ margin-right: 100px;}
 }
 
 @media only screen and (min-width: 601px) {
-    .messaging-1 button {
+    .chat-form button {
         font-size: 10px;
     }
     button svg {
@@ -181,7 +181,7 @@ margin-right: 100px;}
     }
 }
 
-.messaging-1 textarea {
+.chat-form textarea {
     resize: none;
     min-width: 30%;
     background-color: #1d2633;
@@ -191,7 +191,7 @@ margin-right: 100px;}
 
 /* Message------------------------------ */
 
-.messaging-body-1 {
+.chat-message {
     min-width: 30%;
     width: 65%;
     height: min-content;
@@ -206,7 +206,7 @@ margin-right: 100px;}
     background-color: #9196A1;
 }
 
-.messaging-body-1 img {
+.chat-message img {
     height: 24px;
     width: 24px;
     border: solid gray 0.1px;
@@ -216,26 +216,26 @@ margin-right: 100px;}
 }
 
 @media only screen and (min-width: 601px) {
-    .messaging-body-1 img {
+    .chat-message img {
         width: 32px;
         height: 32px;
     }
-    .messaging-body-1 p {
+    .chat-message p {
         /* ------- */
     }
-    .messaging-body-1 {
+    .chat-message {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-.messaging-body-1 p {
+.chat-message p {
     font-size: 14px;
     margin: 5px;
     background-color: inherit;
 }
 
-.messaging-body-1 time {
+.chat-message time {
     grid-column-end: auto;
     font-size: x-small;
     margin-left: auto;
@@ -243,20 +243,20 @@ margin-right: 100px;}
     background-color: inherit;
 }
 
-.messaging-body-1 address {
+.chat-message address {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: inherit;
 }
 
-.messaging-body-1 a, .messaging-body-2 a {
+.chat-message a, .chat-message-2 a {
     background-color: inherit;
 }
 
 /* Right Messgae--------------------- */
 
-.messaging-body-2 {
+.chat-message-2 {
     min-width: 30%;
     width: 65%;
     height: min-content;
@@ -273,7 +273,7 @@ margin-right: 100px;}
     background-color: #4E77A6;
 }
 
-.messaging-body-2 img {
+.chat-message-2 img {
     height: 24px;
     width: 24px;
     border: solid gray 0.1px;
@@ -282,33 +282,33 @@ margin-right: 100px;}
 }
 
 @media only screen and (min-width: 601px) {
-    .messaging-body-2 img {
+    .chat-message-2 img {
         width: 32px;
         height: 32px;
     }
-    .messaging-body-2 p {
+    .chat-message-2 p {
         font-size: 16px;
     }
-    .messaging-body-2 {
+    .chat-message-2 {
         width: 50%;
         margin-bottom: 30x;
     }
 }
 
-.messaging-body-2 p {
+.chat-message-2 p {
     margin: 5px;
     background-color: inherit;
     font-size: 14px;
 }
 
-.messaging-body-2 address {
+.chat-message-2 address {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: inherit;
 }
 
-.messaging-body-2 time {
+.chat-message-2 time {
     grid-column-end: auto;
     font-size: x-small;
     margin-left: auto;
@@ -318,17 +318,17 @@ margin-right: 100px;}
 
 /* General---------------------------------- */
 
-#i {
+.bottom-x {
     padding: 40px;
 }
 
-#j {
+.top-x {
     height: 35px;
     padding: 5px;
 }
 
 @media only screen and (min-width: 601px) {
-    #j {
+    .top-x {
         height: 15px;
         padding: 10px;
     }
