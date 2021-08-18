@@ -10,13 +10,6 @@ export let ChatPage = defineComponent({
         <article class="chat-page">
             <ChatHeader></ChatHeader>
             <ChatHistory></ChatHistory>
-                <ChatMessage></Chatmessage>
-                <ChatMessageRight></ChatmessageRight>
-                <ChatMessage></Chatmessage>
-                <ChatMessage></Chatmessage>
-                <ChatMessageRight></ChatmessageRight>
-                <ChatMessage></Chatmessage>
-
             <ChatForm></ChatForm>
         </article>
     `,
