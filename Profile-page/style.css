@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.novisual {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+body {
+    background-color: #1b3e66;
+}
+
+button {
+    background-color: transparent;
+}
+
+svg {
+    width: 20px;
+}
+
+.Profile img {
+    width: 100%;
+    height: 30vh;
+    /* max-width: 200px; */
+}
+
+
+@media only screen and (min-width: 601px) {
+    svg {
+        width: 30px;
+    }
+    .action-buttons-in-image button:nth-child(2) {
+        margin-right: 4px;
+        margin-top: 6px;
+        transform: scale(2.1);
+        width: 20px;
+    }
+}
+
+
+.action-buttons-in-image {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40px 250fr 10fr;
+    position: fixed;
+    height: 3vh;
+}
+
+.action-buttons-in-image button {
+    margin: 2px;
+    margin-top: 4px;
+    margin-left: 0px;
+    border: none;
+}
+
+.action-buttons-in-image button:nth-child(2) {
+    margin-right: 4px;
+    margin-top: 6px;
+    transform: scale(0.8);
+    margin-left: auto;
+}
+
+.action-buttons-in-image button:nth-child(3) {
+    margin-left: auto;
+}
+
+
+.user-status-in-image {
+    display: grid;
+    grid-template-columns: 1fr 200fr;
+    top: 25vh;
+    height: 5vh;
+    position: fixed;
+    color: black;
+}
+
+.user-status-in-image>div {
+    width: 100px;
+    height: 20px;
+    font-size: small;
+    font-style: normal;
+    margin-left: 4px;
+}
+
+.user-status-in-image p {
+    color: black;
+}
+
+.user-status-in-image p:nth-child(2) {
+    color: black;
+    font-size: x-small;
+}
+
+.user-info h2:nth-of-type(2) {
+    margin-top: 8px;
+}
+
+.user-status-in-image button {
+    margin-left: auto;
+    margin-right: 3vw;
+    margin-top: ;
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    border: solid transparent;
+    border-radius: 100%;
+}
+
+@media only screen and (min-height: 401px) {
+    .user-status-in-image button {
+        margin-top: 2.5vh;
+    }
+}
+
+@media only screen and (min-height: 1001px) {
+    .user-status-in-image button {
+        margin-top: 3.5vh;
+    }
+}
+
+.user-info {
+    margin-top: 5px;
+    width: 100vw;
+}
+
+.user-info, .Profile-notify, nav, ul {
+    color: rgb(224, 215, 215);
+}
+
+.user-info svg {
+    margin-left: 4px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.user-info>div {
+    margin-bottom: 8px;
+    margin-top: auto;
+}
+
+.user-info svg:nth-child(2) {
+    margin-top: 10px;
+}
+
+.Profile-notify {
+    height: 5vh;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-top: solid 5px #112e50;
+    padding-bottom: 40px;
+    border-bottom: solid 5px #112e50;
+}
+
+.Profile-notify h2 {
+    margin-top: 5px;
+}
+
+.Profile-notify svg {
+    float: left;
+    margin-right: 5px;
+    transform: scale(0.8);
+    margin-left: 4px;
+}
+
+.Profile-notify p, .user-info p {
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 33px;
+    font-style: normal;
+    color: rgb(156, 147, 147);
+}
+
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 15fr 15fr 15fr 20fr 15fr 15fr;
+}
+
+li>button {
+    width: 100%;
+    font-size: 8px;
+    color: whitesmoke;
+    border: none;
+    padding-bottom: 8px;
+    padding-top: 1px;
+    border-bottom: solid 1px rgb(38, 38, 56);
+}
+
+li>button:active {
+    border-bottom: skyblue 3px solid;
+}
+
+@media only screen and (min-width: 401px) {
+    li>button {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    svg {
+        width: 30px;
+    }
+    .user-status-in-image svg {
+        height: 24px;
+    }
+    * {
+        font-size: 14px;
+    }
+    .action-buttons-in-image button:nth-child(2) {
+        margin-right: 14px;
+        margin-top: 7px;
+        transform: scale(1.1);
+        width: 20px;
+    }
+    li>button {
+        font-size: 14px;
+    }
+    .user-status-in-image p:nth-child(2) {
+        color: black;
+        font-size: small;
+    }
+    .user-info p:nth-of-type(2) {
+        font-size: 12px;
+        margin-top: 3px;
+        margin-left: 45px;
+    }
+}
