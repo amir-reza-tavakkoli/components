@@ -77,15 +77,19 @@ button {
     * {
         font-size: 14px;
     }
+
     .primary-nav button:nth-child(4) {
         transform: translateX(+5vw);
     }
+
     .primary-nav button:nth-child(2) {
         transform: translateX(+1vw);
     }
+
     .primary-nav button:nth-child(1) {
         transform: translateX(-2vw);
     }
+
     .primary-nav button:nth-child(3) {
         transform: translateX(-1vw);
     }
@@ -95,17 +99,21 @@ button {
     * {
         font-size: 16px;
     }
+
     .primary-nav {
         display: grid;
         grid-template-columns: 10000fr 1fr 1fr 10000fr;
         border-bottom: solid 1px black;
     }
+
     .primary-nav button:nth-child(2) {
         transform: translateX(+3vw);
     }
+
     .primary-nav button:nth-child(3) {
         transform: translateX(+3vw);
     }
+
     .primary-nav button:nth-child(4) {
         transform: translateX(+16vw);
     }
@@ -124,6 +132,7 @@ ul {
     .primary-nav button>svg {
         width: 24px;
     }
+
     li>button {
         margin-left: 10px;
     }
@@ -178,10 +187,12 @@ li>button {
         margin-left: 10px;
         padding-right: 25vw;
     }
+
     .secondary-nav img {
         width: 64px;
         height: 64px;
     }
+
     .secondary-nav p {
         font-size: 14px;
         margin-left: 8px;
