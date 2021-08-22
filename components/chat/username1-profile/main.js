@@ -1,4 +1,4 @@
-import { createApp } from '../packages/vue.js'
+import { createApp } from '../../../packages/vue.js'
 import { ProfilePage } from './profile-page.js'
 
 let app = createApp({
