@@ -8,7 +8,7 @@
     background-color: #1F303D;
 }
 
-.novisual {
+.nonvisual {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -80,7 +80,7 @@ header {
     margin-right: 2px;
 }
 
-@media only screen and (min-width: 601px) {
+@media  screen and (min-width: 601px) {
     .chat-header a>img {
         height: 50px;
         width: 50px;
@@ -171,7 +171,7 @@ margin-right: 100px;}
     color: aliceblue;
 }
 
-@media only screen and (min-width: 601px) {
+@media  screen and (min-width: 601px) {
     .chat-form button {
         font-size: 10px;
     }
@@ -215,7 +215,7 @@ margin-right: 100px;}
     background-color: inherit;
 }
 
-@media only screen and (min-width: 601px) {
+@media  screen and (min-width: 601px) {
     .chat-message img {
         width: 32px;
         height: 32px;
@@ -281,7 +281,7 @@ margin-right: 100px;}
     margin: 3px;
 }
 
-@media only screen and (min-width: 601px) {
+@media  screen and (min-width: 601px) {
     .chat-message-2 img {
         width: 32px;
         height: 32px;
@@ -327,7 +327,7 @@ margin-right: 100px;}
     padding: 5px;
 }
 
-@media only screen and (min-width: 601px) {
+@media  screen and (min-width: 601px) {
     .top-x {
         height: 15px;
         padding: 10px;

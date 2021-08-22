@@ -3,7 +3,7 @@ import { defineComponent } from '../../packages/vue.js'
 export let ChatHeader = defineComponent({
     template: `
         <nav>
-            <a class="novisual" style="font-size:100px;" href="index.html#textarea" tabindex="1">skip and send message to username1</a>
+            <a class="nonvisual" style="font-size:100px;" href="index.html#textarea" tabindex="1">skip and send message to username1</a>
             </nav>
         <div class="bottom-x"></div>
         <header class="chat-header" aria-label="Chat info">
@@ -22,7 +22,7 @@ export let ChatHeader = defineComponent({
                 </svg>
             </button>
             <address>
-                <h1 class="novisual">Chat with username 1</h1>
+                <h1 class="nonvisual">Chat with username 1</h1>
                 <a href="users/username-1/username-1.html" aria-label="Go to username1 profile">
                     <img src="users/username-1/username-1.png" alt="username1 avatar" aria-label="Go to username1 avatar">
                     <p><span class="p-in-address">Username 1</span></p>
