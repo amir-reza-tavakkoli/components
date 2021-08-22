@@ -67,13 +67,13 @@ button {
 }
 
 .primary-nav button:nth-child(4) {
-width: max-content;
+    width: max-content;
     margin-top: 4px;
     margin-left: 15vw;
     margin-right: 0px;
 }
 
-@media  screen and (min-width: 401px) {
+@media screen and (min-width: 401px) {
     * {
         font-size: 14px;
     }
@@ -91,7 +91,7 @@ width: max-content;
     }
 }
 
-@media  screen and (min-width: 601px) {
+@media screen and (min-width: 601px) {
     * {
         font-size: 16px;
     }
@@ -120,7 +120,7 @@ ul {
     flex-direction: column;
 }
 
-@media  screen and (min-width: 601px) {
+@media screen and (min-width: 601px) {
     .primary-nav button>svg {
         width: 24px;
     }
@@ -173,7 +173,7 @@ li>button {
     color: white;
 }
 
-@media  screen and (min-width: 601px) {
+@media screen and (min-width: 601px) {
     li>button {
         margin-left: 10px;
         padding-right: 25vw;
