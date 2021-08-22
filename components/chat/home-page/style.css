@@ -34,7 +34,7 @@ button {
     background-color: rgb(58, 54, 48);
     width: 100vw;
     display: grid;
-    height: 10vh;
+    height: 8vh;
     font-weight: 700;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-bottom: solid 1px black;
@@ -216,4 +216,86 @@ nav>article>button {
 .secondary-nav[data-sender="hidden"] {
     opacity: 0;
     visibility: hidden;
+}
+
+/* -------------------------------- */
+.chat-in-home{
+
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(13, 90, 134);
+}
+.chat-in-home img{
+    border: solid 1px gainsboro;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+.chat-in-home div{
+    padding-left: 6px;
+    margin-right: auto;
+}
+.chat-in-home a{
+    text-decoration: none;
+    display: flex;
+}
+.chat-in-home div p:nth-of-type(2){
+    margin-top: 3px;
+    color: gainsboro;
+    font-size: 10px;
+}
+.chat-in-home p{
+    color: inherit;
+}
+.chat-in-home time{
+    font-size: 8px;
+}
+.chat-in-home:hover{
+    background-color: rgb(81, 144, 216);
+    color: black;
+    border-bottom: 3px solid black;
+}
+.chat-in-home:hover div>p{
+    color:black !important;
+}
+.newly-arrived{
+    background-color: black;
+    padding-right: 2px;
+    padding-left: 2px;
+    width: max-content;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-top: auto;
+}
+
+@media screen and (min-width:601px){
+    .chat-in-home{
+
+        padding-top: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .chat-in-home img{
+
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .chat-in-home div p:nth-of-type(2){
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .chat-in-home div{
+        padding-left: 10px;
+        padding-right: auto;
+    }
+
+    .chat-in-home time{
+        font-size: 10px;
+    }
 }

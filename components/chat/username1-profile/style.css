@@ -38,6 +38,7 @@ svg {
     svg {
         width: 30px;
     }
+    
     .action-buttons-in-image button:nth-child(2) {
         margin-right: 4px;
         margin-top: 6px;
